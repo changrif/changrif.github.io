@@ -12,6 +12,7 @@
         <!-- JS -->
         <script src="scripts/jquery-3.2.1.min.js" type="text/javascript"></script>
         <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB" crossorigin="anonymous"></script>
+        <script src="scripts/projects.js" type="text/javascript"></script>
 
         <!-- CSS -->
         <link rel="stylesheet" href="styles/normalize.css">
@@ -30,16 +31,124 @@
         </div>
         <div class="proj-info">
             <div class="grid">
-                <div class="fill" style="background-color: purple;"></div>
-                <div style="background-color: aqua;"></div>
-                <div style="background-color: goldenrod;"></div>
-                <div class="fill border" style="background-color: mediumslateblue;"></div>
-                <div style="background-color: darkblue;"></div>
-                <div style="background-color: saddlebrown;"></div>
-                <div style="background-color: lavenderblush;"></div>
-                <div style="background-color: chartreuse;"></div>
-                <div style="background-color: palevioletred;"></div>
-                <div class="fill" style="background-color: tomato;"></div>
+                <div class="summary fill">
+                    <p>I led and mentored students in 2 hour classes in the 12-week iOS Codepath University Bbootcamp. Following an introdutory project to get acquanted with iOS development, I worked on a new app each week in week-long sprints throughout the program, ahead of students. As a teaching assistant, I was responsible for holding class-like sessions the following week covering the material and key concepts for the week's project and labs. On the weekends, I would convene with CodePath founders and other TAs across the country, providing feedback, bug fixes, and experimental improvements to help grow and refine the program.</p>
+                </div>
+                <div class="gray">
+                    <h3>Skills Learned:</h3>
+                    <ul>
+                        <li>Swift -- iOS</li>
+                        <li>Class Management</li>
+                        <li>Liason between UF and CodePath founders</li>
+                        <li>Skillsets in projects:
+                            <ul>
+                                <li>Working with RESTful APIs</li>
+                                <li>MongoDB</li>
+                                <li>Heroku</li>
+                                <li>Parse</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div id="logo" class="gray">
+                    <img src="assets/projects/codepath.png" />
+                </div>
+                <div class="fill border" style="min-height: 0;"></div>
+                <div>
+                    <h2>Tip Calculator</h2>
+                    <ul>
+                        <li>User can enter a bill amount, choose a tip percentage, and see the tip and total values.</li>
+                        <li>Settings page to change the default tip percentage.</li>
+                        <li>Additional Features:
+                            <ul>
+                                <li>UI animations</li>
+                                <li>I implemented a toggling decimal keyboard that appears when the user is entering the bill that disappears after the user clicks elsewhere</li>
+                                <li>I implemented a sliding bar to split the check (possible of splitting the check to a party of up to 5)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="assets/projects/info/codepath/TipCalcGif1.gif" />
+                </div>
+                <div>
+                    <h2>Flicks</h2>
+                    <ul>
+                        <li>User can view movie details by tapping on a cell</li>
+                        <li>User can select from a tab bar for either Now Playing or Top Rated movies</li>
+                        <li>Customized the selection effect of the cell</li>
+                        <li>Additional Features:
+                            <ul>
+                                <li>UI animations</li>
+                                <li>User can search for a movie</li>
+                                <li>User can pull to refresh the movie list</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="assets/projects/info/codepath/flicks.gif" />
+                </div>
+                <div>
+                    <h2>Instagram</h2>
+                    <ul>
+                        <li>User can sign up to create a new account using Parse authentication</li>
+                        <li>User can log in and log out of his or her account</li>
+                        <li>The current signed in user is persisted across app restarts</li>
+                        <li>User can take a photo, add a caption, and post it to "Instagram"</li>
+                        <li>User can view the last 20 posts submitted to "Instagram"</li>
+                        <li>Additional Features:
+                            <ul>
+                                <li>After the user submits a new post, shows a progress HUD while the post is being uploaded to Parse</li>
+                                <li>Allow the logged in user to add a profile photo</li>
+                                <li>Displays the profile photo with each post</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="assets/projects/info/codepath/instaDemo1.gif" />
+                </div>
+                <div>
+                    <h2>Foodie</h2>
+                    <ul>
+                        <li>User can find nearest restaurants and events</li>
+                        <li>Table rows for search results should be dynamic height according to the content height</li>
+                        <li>Implemented map view of restaurant results</li>
+                        <li>Implemented the restaurant detail page</li>
+                        <li>Additional Features:
+                            <ul>
+                                <li>Users can view a filters page with additional filtering options (by types of food)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="assets/projects/info/codepath/yelp.gif" />
+                </div>
+                <div>
+                    <h2>Tweeter</h2>
+                    <ul>
+                        <li>User can sign in using OAuth login flow</li>
+                        <li>User can view last 20 tweets from their home timeline</li>
+                        <li>The current signed in user will be persisted across restarts</li>
+                        <li>In the home timeline, user can view tweet with the user profile picture, username, tweet text, and timestamp</li>
+                        <li>Retweeting and favoriting increment the retweet and favorite count</li>
+                        <li>Additional Features:
+                            <ul>
+                                <li>User can pull to refresh live tweets</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="assets/projects/info/codepath/tweeterGif.gif" />
+                </div>
+                <div class="fill border" style="min-height: 0;"> <h2>More Lab Work:</h2> </div>
+                <div><img src="assets/projects/info/codepath/anotherGitDemo.gif" /></div>
+                <div><img src="assets/projects/info/codepath/canvasDemo1.gif" /></div>
+                <div><img src="assets/projects/info/codepath/parseGif.gif" /></div>
+                <div><img src="assets/projects/info/codepath/tumblr.gif" /></div>
             </div>
         </div>
     </body>

@@ -12,6 +12,7 @@
         <!-- JS -->
         <script src="scripts/jquery-3.2.1.min.js" type="text/javascript"></script>
         <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB" crossorigin="anonymous"></script>
+        <script src="scripts/projects.js" type="text/javascript"></script>
 
         <!-- CSS -->
         <link rel="stylesheet" href="styles/normalize.css">
@@ -20,31 +21,47 @@
     <body>
         <div id="header" style="background-color: orange">
             <div id="back">
-                <span class="fas fa-times icon"></span>
+                <i class="fas fa-times icon"></i>
             </div>
             <div>
+                <h2>Software Engineering Intern - Supply Chain</h2>
                 <h1>The Home Depot</h1>
-                <h2>Software Engineering Intern</h2>
-                <p>golang, reactjs, sql</p>
+                <p>Summer 2018</p>
             </div>
         </div>
-        <div class="content">
-            <img src="assets/projects/info/rdc.jpeg"/>
+        <div class="proj-info">
             <div class=grid>
-                <div><i class="fa fa-rocket"></i></div>
-                <div><i class="fa fa-rocket"></i></div>
-                <div><i class="fa fa-rocket"></i></div>
-                <div><i class="fa fa-rocket"></i></div>
+               <div class="summary fill">
+                    <p>During my most recent work experience, I worked as a software engineering intern within Home Depot's Supply Chain IT department. Specifically, I worked on technology solutions to help optimize operations within THD's deployment centers and the 'breakpack' (BP) area - where smaller freight is condensed. During the first week of the internship, my team and I conducted research interviews with floor supervisors and associates in a deployment center in McCalla, AL gaining insight into their most debilitating issues and problems we could help solve. Those problem statements served as a basis for accomplishing our goals whilst balancing both user and business needs. We found that associates in BP needed a way to see their performance and the impact it made on the day's goal. They were also concerned with following the proper operating practices and how they stand as a team towards their daily goal.
+                    <br>
+                    <br>
+                    We tackled these issues first in design studios, laying out the user interface in a way that wasn't over cluttered with data they did not need and brought emphasis on the most important of that data. We started with statistics like the team's individual and overall performance, cartons per hour, a graphical visualization of their progress to plan, and the most aged freight. Over the course of the summer, we went back and forth to McCalla, AL with both prototypes and live data to get their reactions and the reactions of leaders to the dashboard to validate parts that worked and continue iterating things that didn't work or needed refining.
+                    <br>
+                    <br>
+                    This led to the product we ultimately produced, a dynamically updating non-interactive dashboard application that’s intended to be displayed on television screens in the BP area. The application displays their individual performance, efficiency, overall performance, progress to goal and the most aged freight in the BP area. We recognized our application should aid that process without causing any disruption, so we also made it as simplistic as possible to analyze quickly. Data is updated in realtime as they need it and shows them only the information necessary to keep them informed and effective. It’s now been deployed in two deployment centers in Alabama and Kansas in two month trials before being deployed to all deployment centers and expanded to other departments of the centers. In the short time we had conducting live metrics testing, we found improvements in their efficiency and effectiveness tackling the oldest freight in the area.</p>
+                </div>
+                <div class="gray">
+                    <h3>Skills Used:</h3>
+                    <ul>
+                        <li>GoLang</li>
+                        <li>ReactJS - Frontend Web Development</li>
+                        <li>SQL - OracleDB</li>
+                        <li>Additional skillsets learned:
+                            <ul>
+                                <li>Project Management</li>
+                                <li>UX/UI Design</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div id="logo" class="gray">
+                    <img src="assets/projects/thd.png" />
+                </div>
+                <div class="fill border" style="min-height: 0;"></div>
+                <div class="fill">
+                    <img src="assets/projects/info/rdc.jpeg" style="max-width: 100%;"/>
+                </div>
             </div>
-<!--
-            <p>Those problem statements served as a basis for accomplishing our goals whilst balancing both user and business needs. What the associates in break pack really needed was a way to see their performance and the impact it made on goal. How important following the proper operating practices are and how they stand as a group.
-                
-            We tackled these issues first in a design studio, laying out the user interface in a way that wasn't over cluttered with data they did not need and brought emphasis on the most important of that data. We started with statistics like the team's individual and overall performance, cartons per hour, a graphical visualization of their progress to plan, and the most aged freight. Over the course of the summer, we went back and forth to Mccalla with both prototypes and live data to get their reactions and the reactions of leaders to the dashboard to validate parts that worked and continue iterating things that didn't work or needed refining.
-                
-            This led to our current product, a dynamically updating non-interactive dashboard application that’s intended to be displayed on television screens in the BP area. We found that overly technical statistics were more confusing and caused them to take more time looking at the screen.
-                
-            More than anything, we realize the goal of the RDC is to move cartons through the building and out as quickly as possible, so our application should aid that process without causing any disruption. It’s now been deployed for a little over two weeks now and we’re currently in the process of doing metrics testing to see how it affects their numbers and how impactful it is in their day to day job.</p>
--->
         </div>
     </body>
 </html>

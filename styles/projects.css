@@ -18,7 +18,7 @@ html, body  {
     justify-content: space-between;
     align-content: center;
     margin: 0;
-    padding: 20px;
+    padding: 30px;
     color: white;
 }
 
@@ -42,7 +42,7 @@ html, body  {
 #back   {
     display: inline-block;
     vertical-align: middle;
-    line-height: 146px;
+    line-height: 100px;
 }
 
 .icon  {
@@ -70,4 +70,46 @@ html, body  {
 
 .grid .border   {
     border-top: 1px solid rgba(0, 0, 0, .25);
+}
+
+.grid #logo {
+    max-height: 200px;
+    text-align: center;
+}
+
+.grid .gray {
+    background-color: rgba(0, 0, 0, 0.025);
+}
+
+.grid #logo img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.grid .summary  {
+    font-size: 20px;
+    min-height: 0;
+}
+
+@media (max-width: 460px) {
+    #header h1  {
+        font-size: 30px;
+        margin-bottom: 0;
+    }
+
+    #header h2  {
+        font-size: 15px;
+    }
+
+    #header p  {
+        font-size: 15px;
+    }
+    
+    .grid   {
+        grid-template-columns: 1fr;
+    }
+    
+    .grid .fill  {
+        grid-column: auto;
+    }
 }
