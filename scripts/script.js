@@ -15,6 +15,12 @@ $(document).ready(function(){
     }
   });
     
+    var wdw = document.getElementById('wdw');
+    wdw.addEventListener('click', loadWDW, false);
+    
+    var amex = document.getElementById('amex');
+    amex.addEventListener('click', loadAmex, false);
+    
     var thd = document.getElementById('thd');
     thd.addEventListener('click', loadTHD, false);
     
@@ -32,6 +38,16 @@ $(document).ready(function(){
     
     var eweek = document.getElementById('eweek');
     eweek.addEventListener('click', loadEweek, false);
+    
+    function loadWDW()  {
+        var path = "../wdw.html";
+        $("body").load(path);
+    }
+    
+    function loadAmex()  {
+        var path = "../amex.html";
+        $("body").load(path);
+    }
     
     function loadTHD()  {
         var path = "../thd.html";
@@ -62,6 +78,10 @@ $(document).ready(function(){
         var path = "../eweek.html";
         $("body").load(path);
     }
+    
+    $("#tactech").on("click", function(event)  {
+        window.open("https://github.com/changrif/tactech");
+    });
     
     $("#lingo").on("click", function(event)  {
         window.open("https://devpost.com/software/lingo-wnr4yz");
