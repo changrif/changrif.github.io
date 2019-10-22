@@ -92,7 +92,7 @@ $(document).ready(function(){
     });
 
     $("#webdev").on("click", function(event)  {
-        window.open("https://idael.net");
+        window.open("https://idaelc.github.io");
     });
 
     $("#solitaire").on("click", function(event)  {
