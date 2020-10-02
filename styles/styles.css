@@ -19,8 +19,9 @@ html, body  {
 
 body {
     height: 100vh;
-    overflow: auto;
-    --webkit-overflow-scrolling: touch;
+    overflow-y: auto;
+    box-sizing: border-box;
+    padding: 1rem;
 }
 
 h1  {
